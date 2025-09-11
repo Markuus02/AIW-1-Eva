@@ -4,10 +4,10 @@ document.getElementById("mostrarBtn").addEventListener("click", () => {
 });
 
 const imagenes = [
-  "https://via.placeholder.com/400x250?text=Imagen+1",
-  "https://via.placeholder.com/400x250?text=Imagen+2",
-  "https://via.placeholder.com/400x250?text=Imagen+3",
-  "https://via.placeholder.com/400x250?text=Imagen+4"
+  "img/artes_ciencias.jpg",
+  "img/miguelete.jpg",
+  "img/serrano.jpg",
+  "img/virgen.jpg"
 ];
 
 document.getElementById("imagenBtn").addEventListener("click", () => {
