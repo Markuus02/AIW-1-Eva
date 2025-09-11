@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+#contenido {
+  display: none;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+#fraseBox {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+footer {
+  margin-top: 40px;
+  font-weight: bold;
+}
