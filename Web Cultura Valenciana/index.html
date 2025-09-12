@@ -7,30 +7,68 @@
 </head>
 <body>
   <h1>Descubre Valencia</h1>
-  <p>Valencia es una ciudad vibrante llena de historia, cultura y sabor mediterráneo. Fundada en el siglo XIV, esta hermosa ciudad combina a la perfección el legado histórico con la modernidad. Desde las playas de la Malvarrosa hasta el corazón del casco antiguo, Valencia ofrece una experiencia única. ¡Explora sus maravillas y déjate cautivar por su encanto!</p>
-  <button id="mostrarBtn">Mostrar más...</button>
 
-  <div id="contenido">
-    <img id="imagenPrincipal" src="img/Classic_Word_Cloud.png" alt="Turismo en Valencia">
+  <div class="intro">
+    <p>
+      Valencia es una ciudad vibrante llena de historia, cultura y sabor mediterráneo. 
+      Fundada en el siglo XIV, esta hermosa ciudad combina a la perfección el legado histórico con la modernidad. 
+      Desde las playas de la Malvarrosa hasta el corazón del casco antiguo, Valencia ofrece una experiencia única. 
+      ¡Explora sus maravillas y déjate cautivar por su encanto!
+    </p>
+    <div class="mostrar-mas">
+      <button id="mostrar_mas">Mostrar más...</button>
+    </div>
+  </div>
 
-    <h2>¿Qué visitar en Valencia?</h2>
-    <p>La Ciudad de las Artes y las Ciencias es uno de los complejos arquitectónicos más impresionantes de Europa. También puedes pasear por el casco antiguo y descubrir la Lonja de la Seda, Patrimonio de la Humanidad. Este complejo futurista alberga museos, un acuario y un planetario, siendo un punto de referencia cultural y turístico.</p>
-    <p>El Jardín del Turia, antiguo cauce del río, es ahora un extenso parque urbano ideal para caminar, hacer deporte o simplemente relajarse bajo el sol valenciano. Sus jardines, puentes y áreas recreativas lo convierten en un oasis verde en medio de la ciudad.</p>
-
-    <h2>¿Qué comer en Valencia?</h2>
-    <p>La paella es el plato estrella, pero no te pierdas la fideuà, el arroz al horno o la esgarraet. Cada bocado es una muestra del alma mediterránea. La gastronomía valenciana es rica en sabores frescos y tradicionales, con influencias árabes y cristianas que se fusionan en platos inolvidables.</p>
-    <p>Para los más golosos, la horchata con fartons es una delicia refrescante que no puede faltar en tu visita. Esta bebida típica, hecha de chufa, es perfecta para combatir el calor del Mediterráneo y se acompaña de unos fartons crujientes que la hacen irresistible.</p>
-
-    <div class="galeria">
-      <img id="imagenGaleria" src="img/artes_ciencias.jpg" alt="Galería">
-      <button id="imagenBtn">Mostrar otra imagen</button>
+  <section id="contenido">
+    <div class="nube-palabras">
+      <img class="cloud-img" src="img/Classic_Word_Cloud.png" alt="Turismo en Valencia">
     </div>
 
-    <div id="fraseBox">"A la fresca!"</div>
-    <button id="fraseBtn">Muestra otra frase típica valenciana</button>
+    <!-- SECCIÓN COMER EN VALENCIA -->
+    <div class="section">
+      <h2>¿Qué comer en Valencia?</h2>
+      <p>
+        La paella es el plato estrella, pero no te pierdas la fideuà, el arroz al horno o la esgarraet. 
+        Cada bocado es una muestra del alma mediterránea. La gastronomía valenciana es rica en sabores frescos y tradicionales, 
+        con influencias árabes y cristianas que se fusionan en platos inolvidables.
+      </p>
+      <p>
+        Para los más golosos, la horchata con fartons es una delicia refrescante que no puede faltar en tu visita. 
+        Esta bebida típica, hecha de chufa, es perfecta para combatir el calor del Mediterráneo y se acompaña de unos fartons crujientes que la hacen irresistible.
+      </p>
+    </div>
 
-    <footer>Creado por Marcos</footer>
-  </div>
+    <!-- SECCIÓN VISITAR EN VALENCIA -->
+    <div class="section">
+      <h2>¿Qué visitar en Valencia?</h2>
+      <p>
+        La Ciudad de las Artes y las Ciencias es uno de los complejos arquitectónicos más impresionantes de Europa. 
+        También puedes pasear por el casco antiguo y descubrir la Lonja de la Seda, Patrimonio de la Humanidad. 
+        Este complejo futurista alberga museos, un acuario y un planetario, siendo un punto de referencia cultural y turístico.
+      </p>
+      <p>
+        El Jardín del Turia, antiguo cauce del río, es ahora un extenso parque urbano ideal para caminar, hacer deporte o simplemente relajarse bajo el sol valenciano. 
+        Sus jardines, puentes y áreas recreativas lo convierten en un oasis verde en medio de la ciudad.
+      </p>
+    </div>
+
+    <!-- GALERÍA DE IMÁGENES (GENERADOR) -->
+    <div class="galeria_imagenes">
+      <img id="imagen_galeria" src="img/artes_ciencias.jpg" alt="Galería de Valencia">
+      <button id="otra_imagen">Mostrar otra imagen</button>
+    </div>
+
+    <!-- FRASES TÍPICAS -->
+    <div class="quote-section">
+      <p id="cita">"A la fresca!"</p>
+      <button id="otra_cita">Muestra otra frase típica valenciana</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Creado por Marcos</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>

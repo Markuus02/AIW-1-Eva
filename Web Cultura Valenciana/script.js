@@ -1,8 +1,10 @@
-document.getElementById("mostrarBtn").addEventListener("click", () => {
-  document.getElementById("mostrarBtn").style.display = "none";
+// Botón para mostrar el contenido
+document.getElementById("mostrar_mas").addEventListener("click", () => {
+  document.getElementById("mostrar_mas").style.display = "none";
   document.getElementById("contenido").style.display = "block";
 });
 
+// Galería de imágenes
 const imagenes = [
   "img/artes_ciencias.jpg",
   "img/miguelete.jpg",
@@ -10,11 +12,12 @@ const imagenes = [
   "img/virgen.jpg"
 ];
 
-document.getElementById("imagenBtn").addEventListener("click", () => {
+document.getElementById("otra_imagen").addEventListener("click", () => {
   const aleatoria = imagenes[Math.floor(Math.random() * imagenes.length)];
-  document.getElementById("imagenGaleria").src = aleatoria;
+  document.getElementById("imagen_galeria").src = aleatoria;
 });
 
+// Frases típicas valencianas
 const frases = [
   "A la fresca!",
   "Xe, que bo!",
@@ -23,7 +26,7 @@ const frases = [
   "Això està de categoria!"
 ];
 
-document.getElementById("fraseBtn").addEventListener("click", () => {
+document.getElementById("otra_cita").addEventListener("click", () => {
   const aleatoria = frases[Math.floor(Math.random() * frases.length)];
-  document.getElementById("fraseBox").innerText = `"${aleatoria}"`;
+  document.getElementById("cita").innerText = `"${aleatoria}"`;
 });

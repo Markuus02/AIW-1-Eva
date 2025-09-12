@@ -4,14 +4,14 @@ body {
   margin: 0 auto;
   max-width: 800px;
   text-align: center;
-  padding: 20px 20px 80px 20px; /* Added bottom padding for footer */
+  padding: 20px 20px 80px 20px; /* espacio para el footer fijo */
 }
 
 p {
   text-align: justify;
 }
 
-h1, h2, h3 {
+h1, h2 {
   text-align: center;
 }
 
@@ -19,18 +19,36 @@ h1, h2, h3 {
   display: none;
 }
 
-.galeria img {
+.cloud-img {
   width: 100%;
   max-width: 400px;
   margin: 10px auto;
   display: block;
 }
 
-#fraseBox {
+.galeria_imagenes img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+.quote-section {
   border: 1px solid #ccc;
   padding: 15px;
   margin-top: 20px;
   font-style: italic;
+
+  /* Centrado del contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quote-section p {
+  margin: 0 0 10px 0; /* espacio entre frase y botón */
 }
 
 footer {
@@ -41,8 +59,13 @@ footer {
   background-color: #003366;
   color: white;
   padding: 10px;
-  text-align: center;
+
+  /* Centrado del texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
+  text-align: center;
 }
 
 button {
